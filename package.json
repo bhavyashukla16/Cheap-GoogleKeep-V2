@@ -2,7 +2,13 @@
   "name": "using-pre-built-react-components",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
+  "engines": {
+    "node": "14.15.3"
+  },
+  "keywords": [
+    "react",
+    "starter"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
