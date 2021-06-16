@@ -49,6 +49,7 @@ footer p {
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
+  word-wrap: break-word;
 }
 .note p {
   font-size: 1.1em;
@@ -57,10 +58,23 @@ footer p {
   word-wrap: break-word;
 }
 
-.note button {
+#pin{
   position: relative;
+  bottom: 80px;
   float: right;
-  margin-right: 10px;
+  padding-left: 11px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  outline: none;
+}
+
+#button {
+  position: relative;
+  top: 15px;
+  float: right;
+  margin-right: 3px;
   color: #f5ba13;
   border: none;
   width: 36px;
@@ -72,7 +86,7 @@ footer p {
 form.create-note {
   position: relative;
   width: 480px;
-  margin: 30px auto 20px auto;
+  margin: 30px auto 35px auto;
   background: #fff;
   padding: 15px;
   border-radius: 7px;

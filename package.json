@@ -13,9 +13,11 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
     "netlify-cli": "^3.31.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
+    "react-loader": "^2.4.7",
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
