@@ -74,18 +74,16 @@ function App() {
     .finally(() => setLoading(true))
   }
 
-  const editNote = (id) => (
-    notes.filter(note => {
-      if(note._id===id) {
-      setIsExpanded(true)
-      setId(id)
-      setNote({
-        title: note.title,
-        content: note.content
-      })
-    }
+  const editNote = (id) => {
+    var noteToBeEdited = notes.filter(note => note._id===id)
+    //console.log(noteToBeEdited)
+    setNote({
+      title: noteToBeEdited[0].title,
+      content: noteToBeEdited[0].content
     })
-  )
+    setIsExpanded(true)
+    setId(id)
+    }
 
   const submitEditedNote = () => {
     setLoading(false);
