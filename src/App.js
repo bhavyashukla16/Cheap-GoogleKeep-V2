@@ -28,7 +28,7 @@ function App() {
         window.alert(response.data.message)
       } else {
       setNotes(response.data.notes)
-      console.log(response.data.notes)
+      //console.log(response.data.notes)
       //console.log(notes)
       }
     })
