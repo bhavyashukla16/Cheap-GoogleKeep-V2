@@ -77,12 +77,12 @@ function App() {
   const editNote = (id) => {
     var noteToBeEdited = notes.filter(note => note._id===id)
     //console.log(noteToBeEdited)
+    setIsExpanded(true)
+    setId(id)
     setNote({
       title: noteToBeEdited[0].title,
       content: noteToBeEdited[0].content
     })
-    setIsExpanded(true)
-    setId(id)
     }
 
   const submitEditedNote = () => {
@@ -96,11 +96,11 @@ function App() {
     .catch((err) => console.log(err))
     .finally(() => {
       setId(0)
+      setLoading(true)
       setNote({
         title: "",
         content: ""
       })
-      setLoading(true)
     })
   }
 
