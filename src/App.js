@@ -126,7 +126,7 @@ const pinNote = (id) => {
 }
 
   return (
-    <div>
+    <div className="App">
       <Header />
       <Loader loaded={loading} width={12} length={40} radius={25} color='#505050'/>
       <form className="create-note">
