@@ -131,13 +131,13 @@ const pinNote = (id) => {
       <Loader loaded={loading} width={12} length={40} radius={25} color='#505050'/>
       <form className="create-note">
         {isExpanded && (
-          <input
+          <b><input
             name="title"
             onChange={handleChange}
             value={note.title}
             placeholder="Title"
             autoComplete="off"
-          />
+          /></b>
         )}
         <textarea
           name="content"
